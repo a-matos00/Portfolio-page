@@ -1,124 +1,115 @@
+a{
+	color:white;
+}
+
+body{
+	background-color:#d6edff;
+	color:white;
+	font-family:arial;
+	height:100%;
+	width:100%;
+	margin:0;
+}
+
+#box_top{
+	background-color:#2ca0ff;
+	box-sizing: border-box;
+	color:white;
+	display:flex;
+	flex-direction:row;
+	font-family:alata;
+	height:7%;
+	justify-content: flex-end;
+	left:11.7%;
+	margin-right:10%; 
+	padding-right:20px;
+	position:absolute;
+	top:3.2%;
+	transform: skew(-45deg, 0deg);
+	width:80%;	
+}
+
+#center_div{
+	background-color:#0068bf;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	display:flex;
+	flex-direction:row;
+	height:80%;
+	left:10%;
+	padding:2%;
+	position:absolute;
+	top:10%;
+	width:80%;
+}
+
+.center_divs{
+	height:100%;	
+	width:50%;
+}
+
 @font-face {
   font-family: alata;
   src: url(alata.ttf);
 }
 
 html{
-	width:100%;
 	height:100%;
 	margin:0;
-}
-
-a{
-	
-	color:white;
-}
-body{
-	background-color:#d6edff;
-	color:white;
 	width:100%;
-	height:100%;
-	margin:0;
-	font-family:arial;
-
 }
 
-#center_div{
-	background-color:#0068bf;
-	width:80%;
-	height:80%;
-	left:10%;
-	position:absolute;
-	top:10%;
-	border-radius:0px;
-	display:flex;
-	flex-direction:row;
-	padding:2%;
-	box-sizing: border-box; /*so the padding won't increase the width */
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-.center_divs{
-	width:50%;
-	height:100%;
-	
-}
 #left{
+	border-right-color:white;
 	border-right-style:solid;
 	border-right-width:1px;
-	border-right-color:white;
-	font-size:100px;
 	font-family: alata;
-}
-
-#right{
-	box-sizing: border-box; /*so the padding won't increase the width */
-	padding-left:40px;
-	font-size:18px;
-	line-height:1.5;
-	font-family:alata;
-	padding-top:40px;
-	
-}
-
-#box_top{
-	display:flex;
-	flex-direction:row;
-	justify-content: flex-end;
-	margin-right:10%; 
-	color:white;
-	background-color:#2ca0ff;
-	width:80%;
-	left:11.7%;
-	top:3.2%;
-	position:absolute;
-	height:7%;
-	padding-right:20px;
-	box-sizing: border-box;
-	transform: skew(-45deg, 0deg);
-	font-family:alata;
+	font-size:100px;
 }
 
 .menu_buttons{
-	color:white;
-	font-size:20px;
-	border:solid;
-	
 	background-color:#0068bf;
-	border-radius:10px;
 	border:none;
+	border-radius:10px;
+	color:white;
 	font-family:alata;
+	font-size:20px;
 	margin-bottom:30px;
 }
 
 #menu{
 	display:flex;
 	flex-direction:column;
-	position:fixed;
 	left:0.5%;
+	position:fixed; /*for debugging purposes*/
 	top:15%;
-	
 }
-
 
 .menu_buttons:hover{
 	background-color:white;
 	color:#0068bf;
-	
 }
 
 .project_buttons{
-	font-size:18px;
-	font-family:alata;
-	color:#0068bf;
-	border:none;
 	background:white;
+	border:none;
 	border-radius:10px;
+	color:#0068bf;
+	font-family:alata;
+	font-size:18px;
 	height:30px;
-	
 }
 
 .project_buttons:hover{
 	background-color:#d6edff;
+}
+
+#right{
+	box-sizing: border-box; /*so the padding won't increase the width */
+	font-family:alata;
+	font-size:18px;
+	line-height:1.5;
+	padding-left:40px;
+	padding-top:40px;
 }
