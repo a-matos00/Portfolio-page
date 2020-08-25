@@ -1,0 +1,113 @@
+@font-face {
+  font-family: alata;
+  src: url(alata.ttf);
+}
+
+html{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+a{
+	
+	color:white;
+}
+body{
+	background-color:#525252;
+	color:white;
+	width:100%;
+	height:100%;
+	margin:0;
+	font-family:arial;
+
+}
+
+#center_div{
+	background-color:#1c1c1c;
+	width:80%;
+	height:80%;
+	left:10%;
+	position:absolute;
+	top:10%;
+	border-radius:0px;
+	display:flex;
+	flex-direction:row;
+	padding:2%;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.center_divs{
+	width:50%;
+	height:100%;
+	
+}
+#left{
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:white;
+	font-size:100px;
+	font-family: alata;
+}
+
+#right{
+	box-sizing: border-box; /*so the padding won't increase the width */
+	padding-left:40px;
+	font-size:18px;
+	line-height:1.5;
+	font-family:alata;
+	padding-top:40px;
+	
+}
+
+#box_top{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	margin-right:10%; 
+	color:white;
+	background-color:#373737;
+	width:80%;
+	left:11.7%;
+	top:3.2%;
+	position:absolute;
+	height:7%;
+	padding-right:20px;
+	box-sizing: border-box;
+	transform: skew(-45deg, 0deg);
+	font-family:alata;
+}
+
+.menu_buttons{
+	color:white;
+	font-size:20px;
+	
+	background:none;
+	border:none;
+	font-family:alata;
+	margin-bottom:30px;
+}
+
+#menu{
+	display:flex;
+	flex-direction:column;
+	position:fixed;
+	left:0%;
+	top:15%;
+	
+}
+.button_text:hover{
+	opacity:0.5;
+}
+
+.menu_buttons:hover{
+	background-color:grey;
+	
+	
+}
+
+
+
+
