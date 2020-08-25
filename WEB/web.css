@@ -108,7 +108,17 @@ body{
 	
 }
 
+.project_buttons{
+	font-size:18px;
+	font-family:alata;
+	color:#0068bf;
+	border:none;
+	background:white;
+	border-radius:10px;
+	height:30px;
+	
+}
 
-
-
-
+.project_buttons:hover{
+	background-color:#d6edff;
+}
