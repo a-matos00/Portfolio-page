@@ -9,39 +9,162 @@ body{
 	height:100%;
 	width:100%;
 	margin:0;
+	overflow-y: auto;
 }
 
-#box_top{
-	background-color:#2ca0ff;
-	box-sizing: border-box;
-	color:white;
-	display:flex;
-	flex-direction:row;
-	font-family:alata;
-	height:7%;
-	justify-content: flex-end;
-	left:11.7%;
-	margin-right:10%; 
-	padding-right:20px;
-	position:absolute;
-	top:3.2%;
-	transform: skew(-45deg, 0deg);
-	width:80%;	
+.project_text{
+		font-size:18px;
+		
 }
+
+
+
+
+@media only screen and (min-width: 1200px) {
 
 #center_div{
 	background-color:#0068bf;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-radius: 10px;
+	border-radius: 10px;
 	box-sizing: border-box; /*so the padding won't increase the width */
 	display:flex;
 	flex-direction:row;
-	height:80%;
-	left:10%;
+	height:100%;
 	padding:2%;
+	width:100%;
+}
+
+#left{
+	border-right-color:white;
+	border-right-style:solid;
+	border-right-width:1px;
+	font-family: alata;
+	font-size:100px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+#right{
+	box-sizing: border-box; /*so the padding won't increase the width */
+	font-family:alata;
+	font-size:18px;
+	line-height:1.5;
+	padding-left:40px;
+	padding-top:40px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+.menu_buttons{
+	background-color:#0068bf;
+	border:none;
+	border-radius:10px;
+	color:white;
+	font-family:alata;
+	font-size:20px;
+	margin-bottom:30px;
+	width:100%;
+	height:10%;
+}
+
+#menu{
+	margin-top:0%;
+	display:flex;
+	flex-direction:column;
+	margin-right:30px;
+	width:15%;
+}
+
+#wrapper{
+	width:80%;
+	height:80%;
 	position:absolute;
 	top:10%;
-	width:80%;
+	left:5%;
+	display:flex;
+	
+	flex-direction:row;
+}
+
+#text{
+	width:100%;
+	height:100%;
+	padding-bottom:30px;
+	
+}
+}
+
+@media only screen and (max-width: 1200px) { /* MOBILE DESIGN */
+
+#center_div{
+	background-color:#0068bf;
+	border-radius: 10px;
+	border-radius: 10px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:100%;
+	padding-left:5%;
+	padding-right:5%;
+	overflow-y: auto;
+}
+
+#left{
+	width: 100%;
+	border-bottom-color:white;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	font-family: alata;
+	font-size:80px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+#right{
+	
+	box-sizing: border-box; /*so the padding won't increase the width */
+	font-family:alata;
+	font-size:16px;
+	line-height:1.5;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#text{
+	width:100%;
+	height:100%;
+	padding-bottom:20px;
+}
+
+.menu_buttons{
+	background-color:#0068bf;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-family:alata;
+	font-size:20px;
+	margin-left:20px;
+	
+}
+
+#menu{
+	display:flex;
+	flex-direction:row;
+	margin-bottom: 10px;
+	justify-content: flex-end;
+}
+
+#wrapper{
+	width:90%;
+	height:90%;
+	position:absolute;
+	top:5%;
+	left:5%;
+	display:flex;
+	flex-direction:column;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	
+}
+
 }
 
 .center_divs{
@@ -60,31 +183,7 @@ html{
 	width:100%;
 }
 
-#left{
-	border-right-color:white;
-	border-right-style:solid;
-	border-right-width:1px;
-	font-family: alata;
-	font-size:100px;
-}
 
-.menu_buttons{
-	background-color:#0068bf;
-	border:none;
-	border-radius:10px;
-	color:white;
-	font-family:alata;
-	font-size:20px;
-	margin-bottom:30px;
-}
-
-#menu{
-	display:flex;
-	flex-direction:column;
-	left:0.5%;
-	position:fixed; /*for debugging purposes*/
-	top:15%;
-}
 
 .menu_buttons:hover{
 	background-color:white;
@@ -99,17 +198,21 @@ html{
 	font-family:alata;
 	font-size:18px;
 	height:30px;
+	
 }
 
 .project_buttons:hover{
 	background-color:#d6edff;
 }
 
-#right{
-	box-sizing: border-box; /*so the padding won't increase the width */
-	font-family:alata;
-	font-size:18px;
-	line-height:1.5;
-	padding-left:40px;
-	padding-top:40px;
+.project_titles{
+	font-size:40px;
+	color:white;
 }
+
+#imgo{
+	width:250px;
+	height:400px;
+}
+
+
