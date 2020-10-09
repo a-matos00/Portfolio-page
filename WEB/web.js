@@ -1,4 +1,6 @@
-var bio = "Hi my name is Andrija. I am a 20 year old computer science student at the University of Split. I started programming at the age of 18 when I wanted to make my custom website on Blogger. That lead me to HTML, CSS and Javascript. After 2 years of messing around I created this webpage which can hopefully showcase what I learned so far. "
+
+
+var bio = "Hi my name is Andrija. I am a 20 year old computer science student at the University of Split. My skills include working in HTML/CSS/JS/C/C++, I am also accustomed with using Git and Github. If you are still reading to this point make sure to check the projects section of my website to see what I created so far.";
 document.getElementById("text").innerHTML = bio; //biography text
 
 var live_btn = document.createElement("BUTTON");
@@ -13,9 +15,10 @@ var live_url = document.createElement('a');
 	
 
 var github_link = document.createElement('a');	//anchor that holds the github link
+	github_link.href = "https://github.com/a-matos00";	//asigning url to the text
 var github_text = document.createTextNode("https://github.com/a-matos00");
-github_link.appendChild(github_text);
-github_link.href = "https://github.com/a-matos00";	//asigning url to the text
+	github_link.appendChild(github_text);
+	github_link.href = "https://github.com/a-matos00";	//asigning url to the text
 
 var project_text = document.createElement("div");
 	project_text.classList.add("project_text");
@@ -23,7 +26,7 @@ var project_text = document.createElement("div");
 var hi_lo_btn = document.createElement("BUTTON");
 	hi_lo_btn.classList.add("project_buttons");
 	hi_lo_btn.innerHTML = "Higher or lower game</br>";
-var hi_lo_bio = "Made with HTML/CSS/JS</br>Optimized only for mobile devices</br>Made into an android app using Adobe Phonegapp";
+var hi_lo_bio = "</br>Made with HTML/CSS/JS</br>Optimized only for mobile devices</br>Made into an android app using Adobe Phonegapp";
 
 var hi_lo_title = document.createElement('div');
 	hi_lo_title.classList.add("project_titles");
@@ -32,7 +35,7 @@ var hi_lo_title = document.createElement('div');
 function display_homepage(){
 	hi_lo_title.remove();
 	hi_lo_btn.remove(); //removes the button
-	document.getElementById("text").innerHTML = "Hi my name is Andrija. I am a 20 year old computer science student at the University of Split. I started programming at the age of 18 when I wanted to make my custom website on Blogger. That lead me to HTML, CSS and Javascript. After 2 years of messing around I created this webpage which can hopefully showcase what I learned so far. "
+	document.getElementById("text").innerHTML = bio;
 	document.getElementById("left").innerHTML = "About</br>Me"
 }
 
@@ -48,6 +51,7 @@ function display_info(){
 function display_projects(){
 	document.getElementById("text").innerHTML = "";
 	document.getElementById("text").appendChild(hi_lo_btn); //adds the button for the HI-LO game
+	
 	hi_lo_btn.onclick = function(){
 		document.getElementById("left").innerHTML = "";
 		document.getElementById("left").appendChild(hi_lo_title);
