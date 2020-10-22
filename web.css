@@ -1,0 +1,230 @@
+a{
+	color:white;
+}
+
+body{
+	background-color:#d6edff;
+	color:white;
+	font-family:arial;
+	height:100%;
+	width:100%;
+	margin:0;
+	overflow-y: auto;
+}
+
+.project_text{
+		font-size:18px;
+		
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+#center_div{
+	background-color:#0068bf;
+	border-radius: 10px;
+	border-radius: 10px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	display:flex;
+	flex-direction:row;
+	height:100%;
+	padding:2%;
+	width:100%;
+}
+
+#left{
+	border-right-color:white;
+	border-right-style:solid;
+	border-right-width:1px;
+	font-family: alata;
+	font-size:100px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+#right{
+	box-sizing: border-box; /*so the padding won't increase the width */
+	font-family:alata;
+	font-size:18px;
+	line-height:1.5;
+	padding-left:40px;
+	padding-top:40px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+.menu_buttons{
+	background-color:#0068bf;
+	border:none;
+	border-radius:10px;
+	color:white;
+	font-family:alata;
+	font-size:20px;
+	margin-bottom:30px;
+	width:100%;
+	height:10%;
+}
+
+#menu{
+	margin-top:0%;
+	display:flex;
+	flex-direction:column;
+	margin-right:30px;
+	width:15%;
+}
+
+#wrapper{
+	
+	width:80%;
+	height:80%;
+	position:absolute;
+	top:10%;
+	left:5%;
+	display:flex;
+	
+	flex-direction:row;
+}
+
+#text{
+	width:100%;
+	height:100%;
+	padding-bottom:30px;
+	
+}
+}
+
+@media only screen and (max-width: 1200px) { /* MOBILE DESIGN */
+
+#center_div{
+	background-color:#0068bf;
+	border-radius: 10px;
+	border-radius: 10px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:100%;
+	padding-left:5%;
+	padding-right:5%;
+	overflow-y: auto;
+}
+
+#left{
+	width: 100%;
+	border-bottom-color:white;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	font-family: alata;
+	font-size:80px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+
+@media only screen and (min-height: 700px){
+#left{
+	width: 100%;
+	height:40%;
+	border-bottom-color:white;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	font-family: alata;
+	font-size:80px;
+	box-sizing: border-box; /*so the padding won't increase the width */
+}
+}
+
+#right{
+	
+	box-sizing: border-box; /*so the padding won't increase the width */
+	font-family:alata;
+	font-size:16px;
+	line-height:1.5;
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#text{
+	width:100%;
+	height:100%;
+	padding-bottom:20px;
+}
+
+.menu_buttons{
+	background-color:#0068bf;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-family:alata;
+	font-size:20px;
+	margin-left:20px;
+	
+}
+
+#menu{
+	display:flex;
+	flex-direction:row;
+	margin-bottom: 15px;
+	justify-content: flex-end;
+}
+
+#wrapper{
+	width:90%;
+	height:90%;
+	position:absolute;
+	top:20px;
+	left:5%;
+	display:flex;
+	flex-direction:column;
+	box-sizing: border-box; /*so the padding won't increase the width */
+	
+}
+
+}
+
+.center_divs{
+	height:100%;	
+	width:50%;
+}
+
+@font-face {
+  font-family: alata;
+  src: url(alata.ttf);
+}
+
+html{
+	height:100%;
+	margin:0;
+	width:100%;
+}
+
+
+
+.menu_buttons:hover{
+	background-color:white;
+	color:#0068bf;
+}
+
+.project_buttons{
+	background:white;
+	border:none;
+	border-radius:10px;
+	color:#0068bf;
+	font-family:alata;
+	font-size:18px;
+	height:30px;
+	
+}
+
+.project_buttons:hover{
+	background-color:#d6edff;
+}
+
+.project_titles{
+	font-size:40px;
+	color:white;
+}
+
+#imgo{
+	width:250px;
+	height:400px;
+}
+
+
