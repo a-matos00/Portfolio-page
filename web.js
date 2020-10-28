@@ -58,7 +58,7 @@ function display_projects(){
 		document.getElementById("left").appendChild(project_text);
 		project_text.innerHTML = hi_lo_bio;
 		document.getElementById("left").appendChild(live_url);
-	}; //function for changing
+	}; 
 	
 	
 	document.getElementById("left").innerHTML = "My</br>Projects";
