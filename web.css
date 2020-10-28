@@ -117,18 +117,6 @@ body{
 	box-sizing: border-box; /*so the padding won't increase the width */
 }
 
-@media only screen and (min-height: 700px){
-#left{
-	width: 100%;
-	height:40%;
-	border-bottom-color:white;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	font-family: alata;
-	font-size:80px;
-	box-sizing: border-box; /*so the padding won't increase the width */
-}
-}
 
 #right{
 	
