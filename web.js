@@ -5,12 +5,20 @@ var bio = "Hi my name is Andrija. I am a 20 year old computer science student at
 document.getElementById("text").innerHTML = bio; //biography text
 
 class Cbutton{
-	constructor(css_class, text){
+	constructor(css_class, text, desc_target, arg_desc)
+	{
 		this.el = document.createElement("BUTTON");
 		this.el.classList.add(css_class);
 		this.el.innerHTML	= text;
+		this.desc_target = desc_target;
+		this.desc = arg_desc;
 		
+		this.el.onclick = function showInfo() {
+			document.getElementById(desc_target).innerHTML = "";
+			document.getElementById(desc_target).appendChild(arg_desc);
+		}
 	}
+	
 	
 }
 
@@ -55,12 +63,12 @@ function display_info(){
 }
 	
 function display_projects(){
-	HILO_btn = new Cbutton("project_buttons", "Higher or lower guess game");	//initialise button class for HI-LO game
+	HILO_btn = new Cbutton("project_buttons", "Higher or lower guess game", "left",HILO_description);	//adds HI-LO game button
 	
 	document.getElementById("text").innerHTML = "";
 	document.getElementById("text").appendChild(HILO_btn.el); //adds the button for the HI-LO game
 	
-	HILO_btn.showInfo("left", HILO_description, );
+	
 	
 	/*hi_lo_btn.onclick = function(){
 		document.getElementById("left").innerHTML = "";
