@@ -5,21 +5,34 @@ var bio = "Hi my name is Andrija. I am a 20 year old computer science student at
 document.getElementById("text").innerHTML = bio; //biography text
 
 class Cbutton{
-	constructor(css_class, text, desc_target, arg_desc)
+	
+	constructor(css_class, project_name, desc_target, arg_desc)
 	{
 		this.el = document.createElement("BUTTON");
 		this.el.classList.add(css_class);
-		this.el.innerHTML	= text;
+		this.el.innerHTML	= project_name;
 		this.desc_target = desc_target;
 		this.desc = arg_desc;
+		this.desc_title = project_name;
+		this.desc_title_el = document.createElement("div");
 		
-		this.el.onclick = function showInfo() {
+		$(this.el).click(function(){showInfo();});
+		
+		function showInfo(){
 			document.getElementById(desc_target).innerHTML = "";
-			document.getElementById(desc_target).appendChild(arg_desc);
+			
+			var title = document.createElement("div");
+			document.getElementById(desc_target).appendChild(title);
+			title.className = "project_titles";
+			title.innerHTML = project_name;
+			
+			var desc_div = document.createElement("div");
+			document.getElementById(desc_target).appendChild(desc_div);
+			desc_div.className = "project_text";
+			desc_div.innerHTML = arg_desc;
+			
 		}
 	}
-	
-	
 }
 
 var live_btn = document.createElement("BUTTON");
@@ -40,22 +53,16 @@ var github_text = document.createTextNode("https://github.com/a-matos00");
 var project_text = document.createElement("div");
 	project_text.classList.add("project_text");
 
-
-
 var hi_lo_title = document.createElement('div');
 	hi_lo_title.classList.add("project_titles");
 	hi_lo_title.innerHTML = "Higher/lower game";
 	
 function display_homepage(){
-	hi_lo_title.remove();
-	hi_lo_btn.remove(); //removes the button
 	document.getElementById("text").innerHTML = bio;
 	document.getElementById("left").innerHTML = "About</br>Me"
 }
 
 function display_info(){
-	hi_lo_btn.remove(); //removes the button
-	hi_lo_title.remove();
 	document.getElementById("text").innerHTML = "e-mail: andrija.matosic@outlook.com</br>";
 	document.getElementById("text").innerHTML += "Github: ";
 	document.getElementById("text").appendChild(github_link);
@@ -68,16 +75,6 @@ function display_projects(){
 	document.getElementById("text").innerHTML = "";
 	document.getElementById("text").appendChild(HILO_btn.el); //adds the button for the HI-LO game
 	
-	
-	
-	/*hi_lo_btn.onclick = function(){
-		document.getElementById("left").innerHTML = "";
-		document.getElementById("left").appendChild(hi_lo_title);
-		document.getElementById("left").appendChild(project_text);
-		project_text.innerHTML = hi_lo_bio;
-		document.getElementById("left").appendChild(live_url);
-	}; 
-	*/
-	
 	document.getElementById("left").innerHTML = "My</br>Projects";
+	
 }

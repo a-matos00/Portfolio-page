@@ -208,6 +208,7 @@ html{
 .project_titles{
 	font-size:40px;
 	color:white;
+	 text-decoration: underline;
 }
 
 #imgo{
