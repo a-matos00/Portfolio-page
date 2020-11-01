@@ -21,7 +21,7 @@ body{
 @media only screen and (min-width: 1200px) {
 
 #center_div{
-	background-color:#0068bf;
+	background-color:#004d8c;
 	border-radius: 10px;
 	border-radius: 10px;
 	box-sizing: border-box; /*so the padding won't increase the width */
@@ -52,7 +52,7 @@ body{
 }
 
 .menu_buttons{
-	background-color:#0068bf;
+	background-color:#004d8c;
 	border:none;
 	border-radius:10px;
 	color:white;
