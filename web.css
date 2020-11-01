@@ -14,19 +14,13 @@ body{
 
 .project_text{
 		font-size:18px;
-		
 }
 
-
-@media only screen and (min-width: 1200px) {
+			/* GLOBAL VALUES*/
 
 #center_div{
 	background-color:#004d8c;
-	border-radius: 10px;
-	border-radius: 10px;
 	box-sizing: border-box; /*so the padding won't increase the width */
-	display:flex;
-	flex-direction:row;
 	height:100%;
 	padding:2%;
 	width:100%;
@@ -37,29 +31,49 @@ body{
 	border-right-style:solid;
 	border-right-width:1px;
 	font-family: alata;
-	font-size:100px;
 	box-sizing: border-box; /*so the padding won't increase the width */
 }
 
 #right{
 	box-sizing: border-box; /*so the padding won't increase the width */
 	font-family:alata;
-	font-size:18px;
-	line-height:1.5;
-	padding-left:40px;
-	padding-top:40px;
-	box-sizing: border-box; /*so the padding won't increase the width */
 }
 
 .menu_buttons{
 	background-color:#004d8c;
 	border:none;
-	border-radius:10px;
 	color:white;
 	font-family:alata;
-	font-size:20px;
 	margin-bottom:30px;
 	width:100%;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+#center_div{
+	border-radius: 10px;
+	border-radius: 10px;
+	display:flex;
+	flex-direction:row;
+}
+
+#left{
+	font-size:100px;
+}
+
+#right{
+	font-size:18px;
+	line-height:1.5;
+	padding-left:40px;
+	padding-top:40px;
+}
+
+.menu_buttons{
+	border-radius:10px;
+	font-size:20px;
+	margin-bottom:30px;
 	height:10%;
 }
 
