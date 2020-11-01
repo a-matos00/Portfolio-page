@@ -48,8 +48,6 @@ body{
 	width:100%;
 }
 
-
-
 @media only screen and (min-width: 1200px) {
 
 #center_div{
@@ -93,7 +91,6 @@ body{
 	top:10%;
 	left:5%;
 	display:flex;
-	
 	flex-direction:row;
 }
 
@@ -108,14 +105,9 @@ body{
 @media only screen and (max-width: 1200px) { /* MOBILE DESIGN */
 
 #center_div{
-	background-color:#0068bf;
 	border-radius: 10px;
-	border-radius: 10px;
-	box-sizing: border-box; /*so the padding won't increase the width */
 	display:flex;
 	flex-direction:column;
-	height:100%;
-	width:100%;
 	padding-left:5%;
 	padding-right:5%;
 	overflow-y: auto;
@@ -124,11 +116,10 @@ body{
 #left{
 	width: 100%;
 	border-bottom-color:white;
+	border-right:none;
 	border-bottom-style:solid;
 	border-bottom-width:1px;
-	font-family: alata;
 	font-size:80px;
-	box-sizing: border-box; /*so the padding won't increase the width */
 }
 
 
@@ -150,7 +141,6 @@ body{
 }
 
 .menu_buttons{
-	background-color:#0068bf;
 	border:none;
 	border-radius:5px;
 	color:white;
